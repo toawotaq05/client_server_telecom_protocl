@@ -2,6 +2,7 @@ import numpy as np
 from ..signal import (
     modulator, signal_generator, demodulator, signal_decoder
 )
+from src.lib.channel_simulation import add_awgn_noise
 from socket import socket
 
 from src.log_config import setup_logger
@@ -33,5 +34,8 @@ def encode_and_send_message(s: socket, message: str) -> None:
     modulated_data = modulator.bpsk_modulate(binary_data)
     logger.debug("binary data modulated to length: %d", len(modulated_data))
     logger.debug("binary data (tobytes) modulated to length: %d", len(modulated_data.tobytes()))
+    
+    #Channel
+    noisy_data = add_awgn_noise(modulated_data, 40)
 
-    s.sendall(modulated_data.tobytes())
+    s.sendall(noisy_data.tobytes())
