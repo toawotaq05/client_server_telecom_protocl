@@ -6,7 +6,7 @@ It should be able to convert a message
 (like a string) into its binary representation.
 """
 
-def string_to_binary(input_string):
+def string_to_binary(input_string: str) -> str:
     """
     Convert a string to its binary representation.
     
