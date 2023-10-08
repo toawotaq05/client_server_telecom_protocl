@@ -1,5 +1,12 @@
+# About
+
+Implement Server client handshake
+
+Proceed to send variable length message
+
 # running
 Two terminals in dir /python_server_client:
+
 Terminal 1:
 python -m src.communication.server
 
