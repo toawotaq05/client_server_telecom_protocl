@@ -4,6 +4,8 @@ Implement Server client handshake
 
 Proceed to send variable length message
 
+Uses Strings -> Binary -> BPSK signals for cross communication between server - client.
+
 # running
 Two terminals in dir /python_server_client:
 
