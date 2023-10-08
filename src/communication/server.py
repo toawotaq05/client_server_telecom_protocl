@@ -5,10 +5,13 @@ from src.communication.variable_msg_length import variable_message_send
 def main():
     HOST = '127.0.0.1'
     PORT = 65432
-
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
-        s.listen()
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    
+    s.bind((HOST, PORT))
+    s.listen()
+    
+    with s:
         print(f"Server listening on {HOST}:{PORT}")
 
         conn, addr = s.accept()
