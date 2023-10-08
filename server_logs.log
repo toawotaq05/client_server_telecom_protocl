@@ -1010,3 +1010,59 @@
 2023-10-08 14:16:28,721 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 120
 2023-10-08 14:16:28,721 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: How about this?
 2023-10-08 14:16:28,721 - src.communication.variable_msg_length - variable_message_recv() - DEBUG  - Received msg: How about this?
+2023-10-08 14:30:33,577 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to be sent: SYN
+2023-10-08 14:30:33,577 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to binary data: 010100110101100101001110
+2023-10-08 14:30:33,577 - src.lib.communications - encode_and_send_message() - DEBUG  - binary length: 24
+2023-10-08 14:30:33,578 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data modulated to length: 2400
+2023-10-08 14:30:33,578 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data (tobytes) modulated to length: 19200
+2023-10-08 14:30:33,578 - src.lib.communications - receive_and_decode_message() - DEBUG  - Listened for 19200 data.
+2023-10-08 14:30:33,578 - src.lib.communications - receive_and_decode_message() - DEBUG  - received Signal Length: 2400
+2023-10-08 14:30:33,579 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data: 010100110101100101001110
+2023-10-08 14:30:33,579 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 24
+2023-10-08 14:30:33,579 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: SYN
+2023-10-08 14:30:33,579 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to be sent: SYN-ACK
+2023-10-08 14:30:33,579 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to binary data: 01010011010110010100111000101101010000010100001101001011
+2023-10-08 14:30:33,579 - src.lib.communications - encode_and_send_message() - DEBUG  - binary length: 56
+2023-10-08 14:30:33,579 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data modulated to length: 5600
+2023-10-08 14:30:33,579 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data (tobytes) modulated to length: 44800
+2023-10-08 14:30:33,580 - src.lib.communications - receive_and_decode_message() - DEBUG  - Listened for 44800 data.
+2023-10-08 14:30:33,580 - src.lib.communications - receive_and_decode_message() - DEBUG  - received Signal Length: 5600
+2023-10-08 14:30:33,580 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data: 01010011010110010100111000101101010000010100001101001011
+2023-10-08 14:30:33,581 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 56
+2023-10-08 14:30:33,581 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: SYN-ACK
+2023-10-08 14:30:34,582 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to be sent: ACK
+2023-10-08 14:30:34,582 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to binary data: 010000010100001101001011
+2023-10-08 14:30:34,583 - src.lib.communications - encode_and_send_message() - DEBUG  - binary length: 24
+2023-10-08 14:30:34,583 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data modulated to length: 2400
+2023-10-08 14:30:34,583 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data (tobytes) modulated to length: 19200
+2023-10-08 14:30:34,583 - src.lib.communications - receive_and_decode_message() - DEBUG  - Listened for 19200 data.
+2023-10-08 14:30:34,584 - src.lib.communications - receive_and_decode_message() - DEBUG  - received Signal Length: 2400
+2023-10-08 14:30:34,584 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data: 010000010100001101001011
+2023-10-08 14:30:34,584 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 24
+2023-10-08 14:30:34,584 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: ACK
+2023-10-08 14:30:34,585 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to be sent: LEN00015END
+2023-10-08 14:30:34,585 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to binary data: 0100110001000101010011100011000000110000001100000011000100110101010001010100111001000100
+2023-10-08 14:30:34,585 - src.lib.communications - encode_and_send_message() - DEBUG  - binary length: 88
+2023-10-08 14:30:34,585 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data modulated to length: 8800
+2023-10-08 14:30:34,586 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data (tobytes) modulated to length: 70400
+2023-10-08 14:30:34,586 - src.communication.variable_msg_length - variable_message_send() - DEBUG  - Header sent: LEN00015END
+2023-10-08 14:30:34,586 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to be sent: How about this?
+2023-10-08 14:30:34,586 - src.lib.communications - receive_and_decode_message() - DEBUG  - Listened for 70400 data.
+2023-10-08 14:30:34,586 - src.lib.communications - encode_and_send_message() - DEBUG  - Message to binary data: 010010000110111101110111001000000110000101100010011011110111010101110100001000000111010001101000011010010111001100111111
+2023-10-08 14:30:34,586 - src.lib.communications - receive_and_decode_message() - DEBUG  - received Signal Length: 8800
+2023-10-08 14:30:34,586 - src.lib.communications - encode_and_send_message() - DEBUG  - binary length: 120
+2023-10-08 14:30:34,587 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data modulated to length: 12000
+2023-10-08 14:30:34,587 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data: 0100110001000101010011100011000000110000001100000011000100110101010001010100111001000100
+2023-10-08 14:30:34,587 - src.lib.communications - encode_and_send_message() - DEBUG  - binary data (tobytes) modulated to length: 96000
+2023-10-08 14:30:34,587 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 88
+2023-10-08 14:30:34,587 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: LEN00015END
+2023-10-08 14:30:34,587 - src.communication.variable_msg_length - variable_message_send() - DEBUG  - Message sent: How about this?
+2023-10-08 14:30:34,588 - src.communication.variable_msg_length - variable_message_recv() - DEBUG  - Received header: LEN00015END
+2023-10-08 14:30:34,588 - src.communication.variable_msg_length - variable_message_recv() - DEBUG  - recieved header length (int): 15
+2023-10-08 14:30:34,588 - src.lib.communications - receive_and_decode_message() - DEBUG  - Listened for 96000 data.
+2023-10-08 14:30:34,588 - src.lib.communications - receive_and_decode_message() - DEBUG  - received Signal Length: 12000
+2023-10-08 14:30:34,589 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data: 010010000110111101110111001000000110000101100010011011110111010101110100001000000111010001101000011010010111001100111111
+2023-10-08 14:30:34,589 - src.lib.communications - receive_and_decode_message() - DEBUG  - Demodulated Data Length: 120
+2023-10-08 14:30:34,589 - src.lib.communications - receive_and_decode_message() - DEBUG  - final message recieved: How about this?
+2023-10-08 14:30:34,589 - src.communication.variable_msg_length - variable_message_recv() - DEBUG  - Received msg: How about this?
+2023-10-08 14:33:04,107 - __main__ -                 main() - INFO  - sending out message: How about this?
